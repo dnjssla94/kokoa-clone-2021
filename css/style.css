@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Chango&family=Montserrat:wght@400;600&family=Syne+Mono&display=swap");
+@import "reset.css";
+@import "variables.css";
+/* Components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/alt-screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/icon-row.css";
+@import "components/no-mobile.css";
+
+/* Screems */
+@import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
+
+/* html에 link여러개 쓰는것보다 css에 import하는게 깔끔하다. */
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #2f383e;
+}
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
+}
+
+.header__dot {
+  background-color: red;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  display: inline;
+  position: absolute;
+  top: 40px;
+}
